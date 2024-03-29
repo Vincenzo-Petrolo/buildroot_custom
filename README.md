@@ -18,7 +18,7 @@ sudo apt-get install  build-essential git lzip ncurses-dev minicom
 ```
 4) Cd inside the repository and now you can make two targets:
     - **csky_gx6605s_br_defconfig**: Interact with a UART (115200 8N1) connection in the serial terminal
-    - **csky_gx6605s_br_fbcon_defconfig**: Interact with a HDMI framebuffer console
+    - **csky_gx6605s_br_fbcon_defconfig**: Interact with a HDMI framebuffer console, can run chocolate-DOOM
 
 5) Make the config using the target you've chosen:
 ```
@@ -38,4 +38,17 @@ make
 
 10) Enjoy
 
+## Running DOOM
 
+1) Boot the gx6605s board with the DOOM build installed on the USB flash drive
+
+2) Log-in as root
+
+3) Open DOOM
+
+```
+chocolate-doom
+```
+4) Enjoy
+
+![DOOM on gx6605s](./img/chocolate_doom_demo.jpg)
